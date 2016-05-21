@@ -1,0 +1,41 @@
+{
+  "name": "settings-config",
+  "version": "0.1.0",
+  "description": "A Node.js tool to load configuration depending on your environment",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/grunt && ./node_modules/.bin/mocha test --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:killmenot/settings-config.git"
+  },
+  "keywords": [
+    "application",
+    "app",
+    "config",
+    "configuration",
+    "settings",
+    "environment"
+  ],
+  "author": {
+    "name": "Alexey Kucherenko",
+    "url": "https://github.com/killmenot"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/killmenot/settings-config/issues"
+  },
+  "homepage": "https://github.com/killmenot/settings-config",
+  "dependencies": {
+    "glob": "^7.0.3",
+    "settings": "^0.1.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "load-grunt-tasks": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
