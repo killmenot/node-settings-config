@@ -2,6 +2,10 @@
 
 A Node.js tool to load configuration depending on your environment
 
+[![Build Status](https://travis-ci.org/killmenot/node-settings-config.svg?branch=master)](https://travis-ci.org/killmenot/node-settings-config)
+[![Dependency Status](https://gemnasium.com/badges/github.com/killmenot/node-settings-config.svg)](https://gemnasium.com/github.com/killmenot/node-settings-config)
+[![npm version](https://badge.fury.io/js/settings-config.svg)](https://badge.fury.io/js/settings-config)
+
 
 ## Install
 
