@@ -61,7 +61,7 @@ The external storage feature is useful when you use branch deploy for your appli
   },
   "develop": {
     "db": 1
-  }
+  },
   "feature-login": {
     "db": 1
   }
