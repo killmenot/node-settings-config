@@ -25,15 +25,23 @@ npm install settings-config
 
 ```javascript
 'use strict';
+
 var config = require('settings-config')
-
 console.log(config.foo.bar);
+```
 
+Using `NODE_ENV`
+
+```javascript
+'use strict';
+
+process.env.NODE_ENV = 'development'
+var config = require('settings-config')
+console.log(config.foo.bar); # can be overridden from `config/environments/development.js`
 ```
 
 
 ## Examples
-
 
 ### Basic
 
@@ -48,8 +56,7 @@ app/
   ...
 ```
 
-The `application.js` file is a root configuration. Additional environments are located in `environments` folder as a separate file with the same name.
-
+The `application.js` file is a root configuration. Additional environments are located in `environments` folder as a separate file with the same name. You can also specify the location of `config` directory directly by using `process.env.CONFIG_DIR`
 
 ### Using external storage
 
@@ -82,6 +89,8 @@ www/
       application.js
   server.json
 ```
+
+You can also specify the location of `external storage` file directly by using `process.env.EXTERNAL_STORAGE`
 
 
 ## Licence
