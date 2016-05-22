@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:killmenot/settings-config.git"
+    "url": "git@github.com:killmenot/node-settings-config.git"
   },
   "keywords": [
     "application",
@@ -24,9 +24,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/killmenot/settings-config/issues"
+    "url": "https://github.com/killmenot/node-settings-config/issues"
   },
-  "homepage": "https://github.com/killmenot/settings-config",
+  "homepage": "https://github.com/killmenot/node-settings-config",
   "dependencies": {
     "glob": "^7.0.3",
     "settings": "^0.1.1"
