@@ -62,4 +62,11 @@ describe('settings-config', function () {
     expect(config.value).to.equal('develop');
     expect(config.foo).to.equal('bar');
   });
+
+  it('using env.NODE_ENV for non existing configuration', function () {
+    process.env.NODE_ENV = 'foobar';
+    config = new Config();
+    expect(config.value).to.equal('production');
+    expect(config.foo).to.equal('bar');
+  });
 });
