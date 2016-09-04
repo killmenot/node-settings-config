@@ -69,4 +69,12 @@ describe('settings-config', function () {
     expect(config.value).to.equal('production');
     expect(config.foo).to.equal('bar');
   });
+
+  it('using consturctor parameters', function () {
+    var configDir = path.join(__dirname, 'fixtures/app/config');
+    var env = 'staging';
+    config = new Config(configDir, env);
+    expect(config.value).to.equal('staging');
+    expect(config.foo).to.equal('bar');
+  });
 });
