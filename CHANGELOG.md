@@ -1,9 +1,17 @@
+<a name="0.2.0"></a>
+### 0.2.0 (2016-09-05)
+
+#### Features
+
+* replace lib singleton call to function
+
+
 <a name="0.1.5"></a>
 ### 0.1.5 (2016-09-04)
 
 #### Features
 
-* application.js/json is not required now
+* application.js/json file is not required
 
 
 <a name="0.1.4"></a>

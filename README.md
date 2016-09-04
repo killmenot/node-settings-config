@@ -10,7 +10,7 @@ A Node.js tool to load configuration depending on your environment
 ## Install
 
 ```
-npm install settings-config
+npm install settings-config --save
 
 ```
 
@@ -26,7 +26,7 @@ npm install settings-config
 ```javascript
 'use strict';
 
-var config = require('settings-config')
+var config = require('settings-config')()
 console.log(config.foo.bar);
 ```
 
@@ -36,7 +36,7 @@ Using `NODE_ENV`
 'use strict';
 
 process.env.NODE_ENV = 'development'
-var config = require('settings-config')
+var config = require('settings-config')()
 console.log(config.foo.bar); # can be overridden from `config/environments/development.js`
 ```
 
@@ -91,6 +91,22 @@ www/
 ```
 
 You can also specify the location of `external storage` file directly by using `process.env.EXTERNAL_STORAGE`
+
+
+
+## 0.1.5 -> 0.2.0
+
+
+```
+// 0.1.5.
+var config = require('settings-config');
+```
+
+```
+// 0.2.0.
+var config = require('settings-config')();
+```
+
 
 
 ## Licence
