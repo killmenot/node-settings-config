@@ -27,6 +27,12 @@ describe('settings-config', function () {
     expect(config.value).to.equal('application-json');
   });
 
+  it('no application file', function () {
+    process.chdir(path.join(__dirname, 'fixtures/no-application'));
+    config = new Config();
+    expect(config).to.be.an('object');
+  });
+
   it('basic', function () {
     config = new Config();
     expect(config.value).to.equal('production');

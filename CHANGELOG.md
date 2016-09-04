@@ -1,3 +1,10 @@
+<a name="0.1.5"></a>
+### 0.1.5 (2016-09-04)
+
+#### Features
+
+* application.js/json is not required now
+
 
 <a name="0.1.4"></a>
 ### 0.1.4 (2016-09-04)
