@@ -58,6 +58,10 @@ app/
 
 The `application.js` file is a root configuration. Additional environments are located in `environments` folder as a separate file with the same name. You can also specify the location of `config` directory directly by using `process.env.CONFIG_DIR`
 
+```
+CONFIG_DIR=path/to/config main.js
+```
+
 ### Using external storage
 
 The external storage feature is useful when you use branch deploy for your application and don't want to keep too much confuguration in your `environments` folder. In this case you can create a simple JSON file with the following structure:

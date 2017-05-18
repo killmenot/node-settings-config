@@ -1,6 +1,6 @@
 {
   "name": "settings-config",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A Node.js tool to load configuration depending on your environment",
   "main": "index.js",
   "scripts": {

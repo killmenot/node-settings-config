@@ -1,3 +1,11 @@
+<a name="0.2.1"></a>
+### 0.2.1 (2017-05-18)
+
+#### Bugs
+
+* fix relative paths to pass via CONFIG_DIR
+
+
 <a name="0.2.0"></a>
 ### 0.2.0 (2016-09-05)
 

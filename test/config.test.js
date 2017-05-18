@@ -53,9 +53,19 @@ describe('settings-config', function () {
     expect(config.foo).to.equal('bar');
   });
 
-  it('using env.CONFIG_DIR', function () {
+  it('using env.CONFIG_DIR with absolute path', function () {
     process.env.NODE_ENV = 'staging';
     process.env.CONFIG_DIR = path.join(__dirname, 'fixtures/app/config');
+    config = new Config();
+    expect(config.value).to.equal('staging');
+    expect(config.foo).to.equal('bar');
+  });
+
+  it('using env.CONFIG_DIR with relative path', function () {
+    process.chdir(path.join(__dirname));
+
+    process.env.NODE_ENV = 'staging';
+    process.env.CONFIG_DIR = 'fixtures/app/config';
     config = new Config();
     expect(config.value).to.equal('staging');
     expect(config.foo).to.equal('bar');
