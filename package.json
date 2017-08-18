@@ -1,11 +1,26 @@
 {
   "name": "settings-config",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A Node.js tool to load configuration depending on your environment",
   "main": "index.js",
   "scripts": {
-    "lint": "./node_modules/.bin/grunt",
-    "test": "./node_modules/.bin/mocha test --recursive"
+    "lint": "grunt",
+    "test": "mocha test --recursive",
+    "coverage": "nyc --reporter=html --reporter=text _mocha test --recursive",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "nyc": {
+    "all": true,
+    "include": [
+      "lib/**/*.js"
+    ],
+    "exclude": [
+      "test/**/*.js"
+    ]
   },
   "repository": {
     "type": "git",
@@ -28,21 +43,19 @@
     "url": "https://github.com/killmenot/node-settings-config/issues"
   },
   "homepage": "https://github.com/killmenot/node-settings-config",
-  "pre-commit": [
-    "lint",
-    "test"
-  ],
   "dependencies": {
     "glob": "^7.0.3",
-    "is-absolute": "^0.2.6",
+    "is-absolute": "^1.0.0",
     "settings": "^0.1.1"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
+    "chai": "^4.1.1",
+    "coveralls": "^2.13.1",
     "grunt": "^1.0.1",
     "grunt-contrib-jshint": "^1.0.0",
     "load-grunt-tasks": "^3.5.0",
-    "mocha": "^2.4.5",
+    "mocha": "^3.5.0",
+    "nyc": "^11.1.0",
     "pre-commit": "^1.2.2"
   }
 }
