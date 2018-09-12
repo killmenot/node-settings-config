@@ -1,6 +1,6 @@
 {
   "name": "settings-config",
-  "version": "0.2.3",
+  "version": "1.0.0",
   "description": "A Node.js tool to load configuration depending on your environment",
   "main": "index.js",
   "author": {
@@ -52,7 +52,7 @@
     "coveralls": "^3.0.2",
     "jshint": "^2.9.6",
     "mocha": "^5.2.0",
-    "nyc": "^13.0.1",
+    "nyc": "^13.1.0",
     "pre-commit": "^1.2.2"
   }
 }

@@ -1,5 +1,14 @@
 # CHANGELOG
 
+<a name="1.0.0"></a>
+### 1.0.0 (2018-08-12)
+
+#### Misc
+
+* drop support Node.js less than 4 version
+* refactoring
+
+
 <a name="0.2.3"></a>
 ### 0.2.3 (2018-08-12)
 
