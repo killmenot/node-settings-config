@@ -4,7 +4,7 @@ A Node.js tool to load configuration depending on your environment
 
 [![Build Status](https://travis-ci.org/killmenot/node-settings-config.svg?branch=master)](https://travis-ci.org/killmenot/node-settings-config)
 [![Coverage Status](https://coveralls.io/repos/github/killmenot/node-settings-config/badge.svg?branch=master)](https://coveralls.io/github/killmenot/node-settings-config?branch=master)
-[![Dependency Status](https://gemnasium.com/badges/github.com/killmenot/node-settings-config.svg)](https://gemnasium.com/github.com/killmenot/node-settings-config)
+[![Dependency Status](https://david-dm.org/killmenot/node-settings-config.svg)](https://david-dm.org/killmenot/node-settings-config.svg)
 [![npm version](https://badge.fury.io/js/settings-config.svg)](https://badge.fury.io/js/settings-config)
 
 
@@ -98,7 +98,6 @@ www/
 You can also specify the location of `external storage` file directly by using `process.env.EXTERNAL_STORAGE`
 
 
-
 ## 0.1.5 -> 0.2.0
 
 
@@ -113,25 +112,24 @@ var config = require('settings-config')();
 ```
 
 
-
 ## Licence
 
-The MIT License (MIT) Alexey Kucherenko
+    The MIT License (MIT) Alexey Kucherenko
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
