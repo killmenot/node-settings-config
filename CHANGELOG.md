@@ -1,7 +1,15 @@
 # CHANGELOG
 
+<a name="1.0.1"></a>
+### 1.0.1 (2018-09-20)
+
+#### Bugs
+
+* fix a problem when passed environment not used if NODE_ENV is set
+
+
 <a name="1.0.0"></a>
-### 1.0.0 (2018-08-12)
+### 1.0.0 (2018-09-12)
 
 #### Misc
 
